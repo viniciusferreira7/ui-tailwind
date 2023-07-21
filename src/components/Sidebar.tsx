@@ -1,3 +1,4 @@
+import { NavLink } from './NavLink'
 import { Logo } from './icons/Logo'
 
 export function Sidebar() {
@@ -8,48 +9,13 @@ export function Sidebar() {
         <div className="flex flex-col gap-4">
           <strong className="text-zinc-100 font-medium text-sm">Guides</strong>
           <div className="text-sm flex flex-col pl-2">
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Introduction
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Quickstart
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              SDKs
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Authentication
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Pagination
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Errors
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Webhooks
-            </a>
+            <NavLink href="">Introduction</NavLink>
+            <NavLink href="">Quickstart</NavLink>
+            <NavLink href="">SDKs</NavLink>
+            <NavLink href="">Authentication</NavLink>
+            <NavLink href="">Pagination</NavLink>
+            <NavLink href="">Errors</NavLink>
+            <NavLink href="">Webhooks</NavLink>
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -57,36 +23,11 @@ export function Sidebar() {
             Resources
           </strong>
           <div className="text-sm flex flex-col pl-2">
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Contacts
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Conversations
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Messages
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Groups
-            </a>
-            <a
-              className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors"
-              href=""
-            >
-              Attachments
-            </a>
+            <NavLink href="">Contacts</NavLink>
+            <NavLink href="">Conversations</NavLink>
+            <NavLink href="">Messages</NavLink>
+            <NavLink href="">Groups</NavLink>
+            <NavLink href="">Attachments</NavLink>
           </div>
         </div>
       </nav>
